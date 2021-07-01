@@ -1,0 +1,120 @@
+{
+  "defaultSeverity": "error",
+  "extends": [],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "jsRules": {},
+  "rules": {
+    "prefer-const": true,
+    "no-var-keyword": true,
+    "adjacent-overload-signatures": true,
+    "ban-types": {
+      "options": [
+        ["Object", "Avoid using the `Object` type. 10 curele cristi..."],
+        ["Function", "Avoid using the `Function` type. Prefer a specific function type, like `() => void`. 10 curele cristi..."],
+        ["Boolean", "Avoid using the `Boolean` type. 10 curele cristi..."],
+        ["Number", "Avoid using the `Number` type. 10 curele cristi..."],
+        ["String", "Avoid using the `String` type. 10 curele cristi..."],
+        ["Symbol", "Avoid using the `Symbol` type. 10 curele cristi..."]
+      ]
+    },
+    "member-access": true,
+    "member-ordering": [true, {"order": [
+      "public-static-field",
+      "protected-static-field",
+      "private-static-field",
+      "public-instance-field",
+      "protected-instance-field",
+      "private-instance-field",
+      "public-constructor",
+      "protected-constructor",
+      "private-constructor",
+      "public-static-method",
+      "protected-static-method",
+      "private-static-method",
+      "public-instance-method",
+      "protected-instance-method",
+      "private-instance-method"
+    ]}],
+    "no-any": {
+      "severity": "warning"
+    },
+    "no-internal-module": true,
+    "no-parameter-reassignment": false,
+    "no-reference": true,
+    "no-var-requires": true,
+    "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
+    "prefer-for-of": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "parameter",
+      "property-declaration",
+      "member-variable-declaration",
+      "variable-declaration"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "unified-signatures": true,
+    "ban-comma-operator": true,
+    "curly": [true, "ignore-same-line"],
+    "no-conditional-assignment": true,
+    "no-construct": true,
+    "no-duplicate-super": true,
+    "no-duplicate-switch-case": true,
+    "no-dynamic-delete": true,
+    "no-eval": true,
+    "cyclomatic-complexity": true,
+    "completed-docs": [
+      true,
+      "methods"
+    ],
+    "jsdoc-format": true,
+    "no-unused-expression": true,
+    "no-unused-variable": true,
+    "prefer-conditional-expression": true,
+    "triple-equals": [true, "allow-null-check", "allow-undefined-check"],
+    "deprecation": true,
+    "no-duplicate-imports": true,
+    "max-classes-per-file": [true, 1, "exclude-class-expressions"],
+    "no-require-imports": true,
+    "prefer-readonly": true,
+    "array-type": [true, "generic"],
+    "arrow-return-shorthand": true,
+    "binary-expression-operand-order": true,
+    "class-name": true,
+    "comment-format": [true, "check-space"],
+    "newline-per-chained-call": false,
+    "no-angle-bracket-type-assertion": true,
+    "no-parameter-properties": true,
+    "no-unnecessary-qualifier": true,
+    "object-literal-key-quotes": [true, "consistent-as-needed"],
+    "one-line": [true, "check-catch", "check-finally", "check-else", "check-open-brace", "check-whitespace"],
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "prefer-switch": [true, {"min-cases": 3}],
+    "prefer-template": [true, "allow-single-concat"],
+    "type-literal-delimiter": [
+      true,
+      {
+        "singleLine": "always"
+      }
+    ],
+    "variable-name": [true, "ban-keywords", "allow-leading-underscore"],
+    "arrow-parens": true,
+    "import-spacing": true,
+    "indent": [true, "spaces", 4]
+
+  },
+  "rulesDirectory": []
+}

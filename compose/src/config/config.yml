@@ -1,0 +1,20 @@
+local:
+    cassandra:
+        contactPoints:
+            - localhost:9242
+        dataCenter: datacenter1
+        user: cassandra
+        password: cassandra
+        keyspace: sdf_api
+    express:
+        port: 3000
+dev:
+    cassandra:
+        contactPoints:
+            - cassandra:9042
+        dataCenter: datacenter1
+        user: cassandra
+        password: cassandra
+        keyspace: sdf_api
+    express:
+        port: 3000
